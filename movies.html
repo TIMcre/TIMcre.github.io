@@ -11,7 +11,8 @@
 <body>
     <nav class="navbar" role="navigation" aria-label="main navigation">
         <div class="navbar-brand has-background-dark">
-            <a role="button" class="navbar-burger has-text-light" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <a role="button" class="navbar-burger has-text-light" aria-label="menu" aria-expanded="false"
+                data-target="navbarBasicExample">
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
@@ -20,7 +21,7 @@
         <div id="navbarBasicExample" class="navbar-menu has-background-dark">
             <div class="navbar-start">
                 <a class="navbar-item has-text-light">
-                    Filme 
+                    Filme
                 </a>
                 <a class="navbar-item has-text-light">
                     Serien
@@ -29,50 +30,66 @@
             <div class="navbar-end">
                 <div class="navbar-item">
                     <div class="buttons">
-                      <a class="button is-danger is-rounded">
-                        <strong>Sign up</strong>
-                      </a>
-                      <a class="button is-light is-rounded">
-                        Log in
-                      </a>
+                        <a class="button is-danger is-rounded">
+                            <strong>Sign up</strong>
+                        </a>
+                        <a class="button is-light is-rounded">
+                            Log in
+                        </a>
                     </div>
-                  </div>
-              </div>
+                </div>
+            </div>
         </div>
-    </nav>      
-    <p>Mein Favorit der Woche</p>
-    <div class="columns is-mobile">
-        <div class="column">
-            <img src="assets/shrek.jpg" style="width: 400px">
-            <button class="button is-danger is-rounded" id="more0">Mehr zu diesem Film</button>
+    </nav>
+
+    <div class="has-background-dark">
+        <p class="has-text-light title">Mein Favorit der Woche</p>
+        <div class="columns is-mobile">
+            <div class="column">
+                <img src="assets/shrek.jpg" style="width: 400px">
+                <button class="button is-danger is-rounded" id="more0">Mehr zu diesem Film</button>
+            </div>
+            <div class="column" id="info0">               
+            
+                <p class="has-text-light title">Shrek</p>
+                <p class="has-text-light ">Shrek – Der tollkühne Held ist ein computeranimierter Kinofilm von DreamWorks aus dem Jahr 2001.
+                    Darin wird die Geschichte eines gleichnamigen Ogers erzählt, der in einer Märchenwelt lebt und
+                    versehentlich in ein Abenteuer um die Rettung einer Prinzessin gerät. </p>
+                <p class="has-text-light title">Dauer</p>
+                <p id="minutes" class="has-text-light"></p>
+                <p id="hours" class="has-text-light"></p>
+
+                
+                <button id="less0" class="button is-danger is-rounded">Schließen</button>
+            </div>
         </div>
-        <div class="column" id="info0">
-            <p>Shrek</p>
-            <p>Shrek – Der tollkühne Held ist ein computeranimierter Kinofilm von DreamWorks aus dem Jahr 2001. Darin wird die Geschichte eines gleichnamigen Ogers erzählt, der in einer Märchenwelt lebt und versehentlich in ein Abenteuer um die Rettung einer Prinzessin gerät. </p>
-            <p>Dauer</p>
-            <p id="minutes"></p>
-            <p id="hours"></p>
+        <p>Meine Lieblings Filme</p>
+        <div class="colum is-mobile">
+            <div class="colum">
+                <img src="assets/shrek.jpg" style="width: 400px">
+                <p>Shrek</p>
+            </div>
+            <div class="colum is-narrow"><img src="assets/shrek.jpg" style="width: 400px">
+                <p>Shrek</p>
+            </div>
+            <div class="colum is-narrow"><img src="assets/shrek.jpg" style="width: 400px">
+                <p>Shrek</p>
+            </div>
+            <div class="colum is-narrow"><img src="assets/shrek.jpg" style="width: 400px">
+                <p>Shrek</p>
+            </div>
         </div>
     </div>
-    <p>Meine Lieblings Filme</p>
-      <div class="colum is-mobile">
-        <div class="colum">
-            <img src="assets/shrek.jpg" style="width: 400px">
-            <p>Shrek</p>
-        </div>
-        <div class="colum"><img src="assets/shrek.jpg" style="width: 400px"><p>Shrek</p></div>
-        <div class="colum"><img src="assets/shrek.jpg" style="width: 400px"><p>Shrek</p></div>
-        <div class="colum"><img src="assets/shrek.jpg" style="width: 400px"><p>Shrek</p></div>
-      </div>
 </body>
+
 </html>
 
 <script>
 
-var minutes = 87;
-var hours = minutes / 60;
-document.getElementById("minutes").innerHTML = minutes + " Minuten";
-document.getElementById("hours").innerHTML = hours + " Stunden";
+    var minutes = 87;
+    var hours = minutes / 60;
+    document.getElementById("minutes").innerHTML = minutes + " Minuten";
+    document.getElementById("hours").innerHTML = hours + " Stunden";
 
 </script>
 
