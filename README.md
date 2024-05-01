@@ -11,5 +11,3 @@ The `movies.html` and `shows.html` pages both have a similar structure, featurin
 The `style.css` file contains all of the styles for the site, including the use of the `has-bg-img` class to apply a background image to the hero section on the homepage.
 
 The `main.js` file contains the JavaScript code for the site, including the event listeners for the "More" and "Close" buttons on the `movies.html` and `shows.html` pages.
-
-I hope you enjoy using this code for your own movie and TV show recommendation site!
